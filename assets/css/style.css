@@ -599,17 +599,36 @@ body.nav-active { overflow: hidden; }
   #CONTACT
 \*-----------------------------------*/
 
-.contact { padding-block-end: 0; }
 
 .contact-card {
-  background-color: white;
+  background-color:var(--black-coral);
+  opacity: 90%;
   padding: 32px;
   border-radius: var(--radius-8);
   display: grid;
-  gap: 40px;
+  gap: 20px;
 }
 
-.contact .section-title { margin-block-start: 20px; }
+.contact .section-title { margin-block-start:  10px; }
+
+.input-field {
+  background-color: var(--white);
+  color: var(--black-coral);
+  font-size: var(--fs-7);
+  padding: 14px 18px;
+  border-radius: var(--radius-6);
+  outline: none;
+  margin-block-end: 20px;
+}
+
+.input-field::placeholder { color: var(--manatee); }
+
+textarea.input-field {
+  min-height: 120px;
+  height: 120px;
+  max-height: 240px;
+  resize: vertical;
+}
 
 
 /*-----------------------------------*\
