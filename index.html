@@ -613,14 +613,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <script>
 document.addEventListener("DOMContentLoaded", function() {
-    const mailerForm = document.querySelector('form[data-id="123456789"]'); // Select MailerLite Form
+    const mailerForm = document.querySelector("form"); // Select MailerLite Form
 
     if (mailerForm) {
         mailerForm.addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent default submission
             setTimeout(function() {
                 window.location.href = "https://arshad0812.github.io/FormSuccess"; // Change this to your URL
-            }, 2000); // Delay for 2 seconds to allow submission
+            }, 5000); // Delay for 2 seconds to allow submission
         });
     }
 });
