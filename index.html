@@ -559,7 +559,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </p>
                 
               </div>
-              <form action="" class="contact-form" data-reveal="right">
+              <form action="" class="contact-form" data-reveal="right" data-id="123456789">
                 <iframe src="https://dashboard.mailerlite.com/forms/1295605/147286960457647394/share" width="100%" height="370px" frameborder="" loading="lazy"></iframe>
               </form>
             </div>
@@ -609,6 +609,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         ml('account', 'YOUR_ACCOUNT_ID'); // Replace with your MailerLite account ID
     </script>
+
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const mailerForm = document.querySelector('form[data-id="123456789"]'); // Select MailerLite Form
+
+    if (mailerForm) {
+        mailerForm.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default submission
+            setTimeout(function() {
+                window.location.href = "https://arshad0812.github.io/FormSuccess"; // Change this to your URL
+            }, 2000); // Delay for 2 seconds to allow submission
+        });
+    }
+});
+</script>
+
 
     <!-- custom js link-->
    <script src="./assets/js/script.js"></script>
